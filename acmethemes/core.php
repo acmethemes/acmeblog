@@ -132,11 +132,9 @@ function acmeblog_scripts() {
 	jquery start*/
 	/*html5shiv*/
 	wp_enqueue_script( 'html5shiv', get_template_directory_uri() . '/assets/library/html5shiv/html5shiv.min.js', array( 'jquery' ), '3.7.3', false );
-	wp_script_add_data( 'html5shiv', 'conditional', 'lt IE 9' );
 
 	/*respond js*/
 	wp_enqueue_script( 'respond', get_template_directory_uri() . '/assets/library/respond/respond.min.js', array( 'jquery' ), '1.1.2', false );
-	wp_script_add_data( 'respond', 'conditional', 'lt IE 9' );
 
 	if ( 1 == $acmeblog_customizer_all_values['acmeblog-enable-sticky-sidebar'] ) {
 		wp_enqueue_script( 'theia-sticky-sidebar', get_template_directory_uri() . '/assets/library/theia-sticky-sidebar/theia-sticky-sidebar.min.js', array( 'jquery' ), '1.4.0', 1 );
